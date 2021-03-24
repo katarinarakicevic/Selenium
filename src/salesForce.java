@@ -16,6 +16,7 @@ public class salesForce {
 		/*driver.findElement(By.className("button r4 wide primary")).click();//error
 		  */
 		driver.findElement(By.xpath("//*[@id=\"Login\"]")).click();
+		System.out.println(driver.findElement(By.cssSelector("div#error.loginError")).getText());
 		driver.findElement(By.xpath("//*[@id=\"forgot_password_link\"]")).click();
 		driver.findElement(By.xpath("//*[@id=\"un\"]")).sendKeys("test");
 		driver.findElement(By.xpath("//*[@id=\"continue\"]")).click();
