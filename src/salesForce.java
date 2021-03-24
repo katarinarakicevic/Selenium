@@ -15,7 +15,7 @@ public class salesForce {
 		driver.findElement(By.name("pw")).sendKeys("123456");
 		/*driver.findElement(By.className("button r4 wide primary")).click();//error
 		  */
-		driver.findElement(By.name("Login")).click();
+		driver.findElement(By.xpath("//*[@id=\"Login\"]")).click();
 		
 	}
 
